@@ -82,6 +82,20 @@ h1 [class^="icon-"] {
     margin: 24px 0 0;
 }
 
+tr.more-result {
+    display: none;
+}
+.button-more {
+    position: relative;
+    top: -70px;
+    height: 55px;
+    background: rgba(243,69,65,0.8);
+}
+
+.button-more p{
+    padding:10px;
+}
+
 .page-header {
     background: none repeat scroll 0 0 white;
     border-bottom-color: #dddddd;

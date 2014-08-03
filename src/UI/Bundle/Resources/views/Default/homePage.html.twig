@@ -103,8 +103,16 @@
 
                             <table class="table table-hover">
                                 <tbody>
+                                {% set loop20 = -1 %}
                                 {% for PR in PRs %}
-                                    <tr>
+                                    {% if loop.index0 % 20 == 0 %}
+                                        {% set loop20 = loop20 +1 %}
+                                    {% endif %}
+                                    {% if loop.index0 > 20 %}
+                              <tr class="more-result result-{{ loop20 }}">
+                                    {% else %}
+                              <tr >
+                                    {% endif %}
                                         <td><a rel="no-follow" href="{{ PR.getUrl}}" target="_blank">{{ PR.getIdentity }}</a></td>
                                        <td>
                                             <img width="50" height="50" src="{{ PR.getAvatarUrl }}" class="avatar" alt="">
@@ -122,6 +130,14 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
+    <script>
+        var max_result = {{ loop20 }};
+    </script>
+
+                            <div class="col-xs-12 col-md-12 text-center button-more">
+                                <p><a class="btn btn-default ">more Pull Requests</a>
+                                </p>
+                            </div>
                         </div>
                         <div class="col-md-2 col-xs-2">
                             <h3>They said</h3>

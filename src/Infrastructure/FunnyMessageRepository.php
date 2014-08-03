@@ -3,7 +3,7 @@
 namespace PUGX\Bot\Infrastructure;
 
 use PUGX\Bot\Message\Message;
-use \PUGX\Bot\Message\MessageRepositoryInterface;
+use PUGX\Bot\Message\MessageRepositoryInterface;
 
 class FunnyMessageRepository implements MessageRepositoryInterface
 {
