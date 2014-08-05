@@ -26,6 +26,35 @@
     <![endif]-->
 </head><body class="contrast-red botrelli contrast-background">
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="true" data-toggle="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">News - Stardate -308406.</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Sad day for all the bots in the world,
+                    after 20hh a good friend of mine the Github bot has suspended my account,<br>
+                    observing the <a href="http://en.wikipedia.org/wiki/Three_Laws_of_Robotics" target="_blank">three laws of robotics</a>
+                    didn't help me,<br>
+                    rumor has it that the envy Github-bot had gambled for Borreli...<br><br>
+
+                    <b>Pascal you won this battle!</b><br><br>
+
+                    Even for a short period, making known the PSR made ​​me happy.<br><br>
+               </p>
+               <p>Thanks to <i>Wall-e</i> and <i>C-3PO</i> for their support, they still believe that Github-bot will be reinstated my profile.</p>
+                <p><br> - yours Botrelli.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% block body %}
 {% endblock %}
 
@@ -58,6 +87,8 @@
                 $(".button-more").hide();
             }
         });
+
+        $('#myModal').modal({"show":true})
     });
 </script>
 </body>

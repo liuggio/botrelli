@@ -21,7 +21,7 @@ set :use_composer, true
 set :dump_assetic_assets, true
 
 
-set :repository,  "git@github.com:PUGX/botrelli.git"
+set :repository,  "git@github.com:liuggio/botrelli.git"
 set :scm,         :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `subversion`, `mercurial`, `perforce`, or `none`
 
